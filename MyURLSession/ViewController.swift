@@ -51,9 +51,9 @@ class ViewController: UIViewController {
     let startY: CGFloat = 50
 
     let demoView = DemoView(frame: CGRect(x: startX,
-                                            y:  startY,
-                                            width: width,
-                                            height: height - 100))
+                                          y:  startY,
+                                          width: width,
+                                           height: height - 100))
     
     let scrollView = UIScrollView()
     scrollView.contentSize = demoView.frame.size

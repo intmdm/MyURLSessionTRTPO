@@ -4,7 +4,7 @@
 
 # Содержание
 1 [Документация]()  
-1.1 [Требования](/Users/daniilmaksimcik/Desktop/прога/MyURLSession/Documents/Requirements.md)  
+1.1 [Требования](Documents/Requirements.md)  
 1.2 [Диаграммы]()  
 2 [Код]()  
 3 [Информация о тестировании]()  

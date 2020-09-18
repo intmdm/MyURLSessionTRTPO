@@ -12,7 +12,7 @@ class DemoView: UIView {
 
   var path: UIBezierPath!
   var columSize: CGFloat = 30
-  
+    
   override init(frame: CGRect) {
     super.init(frame: frame)
     
@@ -57,24 +57,18 @@ class DemoView: UIView {
       UIColor.white.setFill()
       path.fill()
     }
-    
-//    path.move(to: CGPoint(x: 0.0, y: 0.0))
-//    
-//    path.addLine(to: CGPoint(x: 0.0, y: self.frame.size.height))
-//    path.addLine(to: CGPoint(x: self.frame.size.width, y: self.frame.size.height))
-//    //path.addLine(to: CGPoint(x: self.frame.size.width, y: 0.0))
-//    path.addArc(withCenter: CGPoint(x: self.frame.size.width, y: 0.0),
-//                radius: self.frame.size.height,
-//                startAngle: -.pi/2,
-//                endAngle: .pi/2,
-//                clockwise: true)
-    
-//    path.addArc(withCenter: CGPoint(x: 180, y: 20), radius: 15, startAngle: -.pi/2, endAngle: .pi/2, clockwise: true)
-//    path.addLine(to: CGPoint(x: 10, y: 35))
-//    path.addArc(withCenter: CGPoint(x: 10, y: 20), radius: 15, startAngle: .pi/2, endAngle:-.pi/2 , clockwise: true)
-    
-    //path.close()
   }
+  
+  func creatGraph() {
+    let aPath = UIBezierPath()
+    aPath.move(to: CGPoint(x:0, y:0))
+    aPath.addLine(to: CGPoint(x: 100, y: 100))
+    aPath.close()
+    
+    UIColor.red.set()
+    aPath.lineWidth = CGFloat()
+    aPath.stroke()
+}
   
   func checkFlag(flag: Int) {
     if flag % 5 == 0 {
@@ -87,6 +81,7 @@ class DemoView: UIView {
   override func draw(_ rect: CGRect) {
     
     self.createRectangle()
+    self.creatGraph()
     
     UIColor.clear.setStroke()
     path.stroke()

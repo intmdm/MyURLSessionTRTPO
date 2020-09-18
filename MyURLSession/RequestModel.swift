@@ -35,7 +35,7 @@ class RequestModel {
                                                                bankUnits: 0,
                                                                baseCurrencies: "840,%20933",
                                                                ratedCurrencies: "840,%20933",
-                                                               count: 10)
+                                                               count: 1)
   
   func show() {
     print(self.registerData.accessToken)

@@ -80,7 +80,7 @@ UIKit — фреймворк языка Swift для построения пол
 ## 2.2 Интерфейс пользователя
 
 Основное окно.
-![Cхема UI](../Documents/Схема%20UI.pdf) 
+![Cхема UI](../Documents/Схема%20UI.png) 
 
 <a name="user_specifications"/>
 

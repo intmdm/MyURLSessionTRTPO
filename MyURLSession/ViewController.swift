@@ -9,6 +9,8 @@
 import UIKit
 
 class ViewController: UIViewController {
+  
+  var Model: RequestModel = RequestModel()
       
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -38,6 +40,7 @@ class ViewController: UIViewController {
         }
       }
     }
+    Model = myModel
   }
 
   override func viewDidAppear(_ animated: Bool) {
@@ -60,8 +63,6 @@ class ViewController: UIViewController {
     scrollView.flashScrollIndicators()
     scrollView.backgroundColor = .blue
     self.view = scrollView
-
-    print(scrollView)
 
     self.view.addSubview(demoView)
  }

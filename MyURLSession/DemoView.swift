@@ -12,10 +12,18 @@ class DemoView: UIView {
 
   var path: UIBezierPath!
   var columSize: CGFloat = 30
+  
+  var data: RequestModel = RequestModel()
     
   override init(frame: CGRect) {
     super.init(frame: frame)
     
+    self.backgroundColor = .red
+  }
+  
+  init(frame: CGRect, data: RequestModel) {
+    super.init(frame: frame)
+    self.data = data
     self.backgroundColor = .red
   }
   
@@ -68,6 +76,10 @@ class DemoView: UIView {
     UIColor.red.set()
     aPath.lineWidth = CGFloat()
     aPath.stroke()
+    
+    print("Data: \(data.mainData.data[0].validFrom)")
+    print("Buy: \(data.mainData.data[0].rate.buyRate)")
+    print("Sell: \(data.mainData.data[0].rate.sellRate)\n")
 }
   
   func checkFlag(flag: Int) {
